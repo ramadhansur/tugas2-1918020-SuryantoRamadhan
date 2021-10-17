@@ -5,19 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
-    <fragment
-        android:layout_width="0px"
-        android:layout_height="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:id="@+id/fragment1"
-        android:name="com.ramadhan.pertemuan2_fragment.Fragment1"/>
-    <fragment
-        android:layout_width="0px"
-        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <fragment
+            android:id="@+id/fragment1"
+            android:name="com.ramadhan.pertemuan2_fragment.Fragment1"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="com.ramadhan.pertemuan2_fragment.Fragment2"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:id="@+id/fragment2"
-        android:name="com.ramadhan.pertemuan2_fragment.Fragment2"/>
-
+        android:orientation="horizontal">
+        <fragment
+            android:id="@+id/fragment3"
+            android:name="com.ramadhan.pertemuan2_fragment.Fragment3"
+            android:layout_width="463dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <fragment
+            android:id="@+id/fragment4"
+            android:name="com.ramadhan.pertemuan2_fragment.Fragment4"
+            android:layout_width="405dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
 </LinearLayout>
